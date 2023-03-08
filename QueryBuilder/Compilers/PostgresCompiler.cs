@@ -10,7 +10,7 @@ namespace SqlKata.Compilers
             LastId = "SELECT lastval() AS id";
         }
 
-        public override string EngineCode { get; } = EngineCodes.PostgreSql;
+        public override string EngineCode { get; } = "postgres";
         public override bool SupportsFilterClause { get; set; } = true;
 
 
